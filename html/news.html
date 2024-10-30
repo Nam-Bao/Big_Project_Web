@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tin Tức</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/news.css">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <section class="header">
+            <div class="top-header">
+               <div class="container">
+                  <div class="row align-items-center">
+                     <div class="col-md-3 col-sm-12">
+                        
+                        <div class="logo">
+                           <img src="../img/logo1.png" />
+                        </div>
+                     </div>
+                     <div class="col-md-7">
+                        <div class="search">
+                           <form class="form-inline justify-content-center row">
+                              <div class="form-search col-10">
+                                 <input class="form-control w-100" type="text" placeholder="Search" aria-label="Search">
+                                 <button class="btn btn-search p-o" type="submit">
+                                 <i class="fa fa-search" aria-hidden="true"></i>
+                                 </button>
+                              </div>
+                           </form>
+                        </div>
+                     </div>
+                     
+                     <div class="col-md-2">
+                        <button type="button" class="btn-cart">
+                           <i class="fa fa-cart-plus mr-2" aria-hidden="true"></i>
+                           <a href="dat_hang.html" class="text-white p-1" > Giỏ Hàng</a>
+                        </button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+    </header>
+    <div class="background-menu"> </div>
+    <div class="menu">
+        <div class="navbar navbar-expand-lg">
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="nav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/home.html">&#x1f3e0; HOME</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            SẢN PHẨM <i class="fa fa-angle-down"></i>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a href="../html/vali.html" class="dropdown-item">VALI</a></li>
+                            <li><a href="../html/backpack.html" class="dropdown-item">TÚI</a></li>
+                        </ul>
+                    
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../html/news.html">TIN TỨC</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="../html/sales.html">KHUYẾN MÃI</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="../html/intro.html">GIỚI THIỆU</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="logout">
+                <button  class="btn btn-logout " id="logout"> Đăng xuất <i class="fa fas fas fa-sign-out-alt" > </i></button>
+            </div>
+            <div class="gr-button login-signup">
+                <button class="btn btn-login " id="dangnhap" data-bs-toggle="modal" data-bs-target="#sign-in">
+                Đăng nhập <i class="fa fa-sign-in"> </i>
+                </button>
+                <div class="modal fade " id="sign-in" >
+                    <div class="modal-dialog">
+                        <div class="modal-content    ">
+                        <div class="modal-header">
+                            <h2 class="modal-title text-center w-100 fw-bold text-dark " >
+                                Đăng Nhập
+                            </h2>
+                        </div>
+                        <form id="login">
+                            <div class="modal-body p-5 ">
+                                <div class="input-group mb-4 ">
+                                    <div class="input-group-text "><i class="fa fas fa-user text-warning"></i></div>
+                                    <input type="text" class="form-control p-2 " id="nameLogin" placeholder="User name">
+                                </div>
+                                <div class="input-group mb-3 ">
+                                    <div class="input-group-text  "><i class="fa fas fa-lock text-warning"></i></div>
+                                    <input type="password" class="form-control p-2" id="passwordLogin" placeholder="Password">
+                                </div>
+                                <p class="text-danger " id="error-signin"></p>
+                                <div class="form-check mb-5 ">
+                                    <input class="form-check-input  text-bg-dark" type="checkbox" value="" id="" />
+                                    <label class="form-check-label  " for=""> Remember password </label>
+                                </div>
+
+                                <button type="submit" class="btn btn-outline-warning w-100 " ><h5 class="fw-bold ">SIGN IN</h5></button>
+                            </div>
+                        </form>
+                        <p class=" text-center ">Bạn chưa có tài khoản  <span class="link-warning">đăng ký</span></p>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-login" id="dangky" data-bs-toggle="modal" data-bs-target="#sign-up" >
+                    Đăng ký <i class="fa fa-user" > </i>
+                </button>
+                <div class="modal fade" id="sign-up" >
+                    <div class="modal-dialog">
+                        <div class="modal-content  ">
+                            <div class="modal-header">
+                                <h2 class="modal-title text-center w-100 fw-bold   ">
+                                Đăng Ký
+                                </h2>
+                            </div>
+                            <div class="modal-body p-5  ">
+                                <form id="form-dangki">
+                                <div class="input-group mb-4 ">
+                                    <div class="input-group-text "><i class="fa fas fa-user text-warning"></i></div>
+                                    <input type="text" class="form-control p-2" id="name" placeholder="User name" >
+                                </div>
+                                <div class="input-group mb-4 ">
+                                    <div class="input-group-text  "><i class="fa fas fa-envelope text-warning"></i></div>
+                                    <input type="email" class="form-control p-2" id="email" placeholder="Eamil" >
+                                </div>
+                                <div class="input-group mb-4 ">
+                                    <div class="input-group-text  "><i class="fa fas fa-phone text-warning"></i></div>
+                                    <input type="text" class="form-control p-2" id="phone" placeholder="Phone" >
+                                </div>
+                                <div class="input-group mb-4 ">
+                                    <div class="input-group-text  "><i class="fa fas fa-lock text-warning"></i></div>
+                                    <input type="password" class="form-control p-2" id="password" placeholder="Password" >
+                                </div>
+                                <div class="form-check mb-5 ">
+                                    <input class="form-check-input text-bg-dark " type="checkbox" value="" id="check-signup" />
+                                    <label class="form-check-label  " for="check-signup"> Đồng ý với <a class="link-warning " style="font-size: 18px;" href="../html/intro.html#ship">điều khoản & chính sách</a> của chúng tôi </label>
+                                    <p class="text-danger" id="error"></p>
+                                </div>
+                                <button type="submit" class="btn btn-outline-warning  w-100 " id="btn-dangky"><h5 class="fw-bold ">SIGN UP</h5></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-news">
+        <div class="sidebar">
+            <h3>DANH MỤC TIN</h3>
+            <ul>
+                <li><a href="../html/news.html">Tin Tức</a></li>
+                <li><a href="../html/sales.html">Khuyến mãi</a></li>
+            </ul>
+            <h3>BÀI VIẾT MỚI</h3>
+            <ul>
+                <li><a href="#">MỞ THẺ THÀNH VIÊN MIỄN PHÍ ƯU ĐÃI LÊN ĐẾN 30%</a></li>
+                <li><a href="#">Cách lựa chọn vali xách tay để đảm bảo tiện lợi và nhẹ nhàng khi bay</a></li>
+                <li><a href="#">Các loại chất liệu vali phổ biến hiện nay và cách chọn vali phù hợp với chuyến đi của bạn</a></li>
+                <li><a href="#">Bật mí kinh nghiệm mua vali du lịch bền đẹp</a></li>
+                <li><a href="#">20 nguyên tắc vàng khi sắp xếp hành lý du lịch</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <h2>Tin tức</h2>
+            <div class="news-item">
+                <div class="pic">
+                    <img alt="new 1" src="../img/news_img/new1.jpeg" />
+                </div>
+                <div class="news-content">
+                    <h3>MỞ THẺ THÀNH VIÊN MIỄN PHÍ ƯU ĐÃI LÊN ĐẾN 30%</h3>
+                    <p>
+                        Nâng cao trải nghiệm cho khách hàng, Công ty CP TUITO tiếp tục triển khai chương trình mở thẻ thành viên dành cho khách hàng mua sắm tại hệ thống TUITO Strore và các kênh online.
+                         Với các bước cực kỳ đơn giản, THẺ THÀNH VIÊN sẽ lập tức được tích điểm ngay khi mua sắm và nhận ngay ưu đãi 30% trên đơn hàng mới nhất.
+                        <a href="#">Đọc tiếp</a>
+                    </p>
+                </div>
+            </div>
+            <div class="news-item">
+                <div class="pic">
+                    <img alt="new 2"  src="../img/news_img/new2.webp" />
+                </div>
+                <div class="news-content">
+                    <h3>Cách lựa chọn vali xách tay để đảm bảo tiện lợi và nhẹ nhàng khi bay</h3>
+                    <p>
+                        Chọn vali xách tay phù hợp không chỉ giúp bạn di chuyển dễ dàng mà còn tránh được những rắc rối không đáng có khi bay. 
+                        Dưới đây TUITO sẽ hướng dẫn chi tiết để bạn có thể chọn cho mình một chiếc vali xách tay thích hợp nhất với nhu cầu chuyến đi của mình.
+                        <a href="#">
+                        Đọc tiếp
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <div class="news-item">
+                <div class="pic">
+                    <img alt="new 3" src="../img/news_img/new3.webp" />
+                </div>
+                <div class="news-content">
+                    <h3>Các loại chất liệu vali phổ biến hiện nay và cách chọn vali phù hợp với chuyến đi của bạn</h3>
+                    <p>
+                        Chất liệu vali là các loại vật liệu được sử dụng để tạo nên phần vỏ và khung của vali. 
+                        Mỗi loại chất liệu có những đặc tính riêng biệt về độ bền, trọng lượng, chống thấm nước,...
+                        Bởi sự da dạng này mà sẽ rất khó để bạn lựa chọn một chiếc vali kéo hợp ý nếu chưa biết đến các 
+                        loại chất liệu vali phổ biến hiện nay và cách chọn mẫu vali phù hợp với chuyến đi của bạn. 
+                        <a href="#">
+                        Đọc tiếp
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <div class="news-item">
+                <div class="pic">
+                    <img alt="new 4" src="../img/news_img/new4.webp" />
+                </div>
+                <div class="news-content">
+                    <h3>Bật mí kinh nghiệm mua vali du lịch bền đẹp</h3>
+                    <p>
+                        Chắc hẳn các bạn hay tôi đều muốn chọn mua vali du lịch bền đẹp để thời kì sử dụng được lâu hơn, vậy bạn cần để ý những đặc điểm sau. 
+                        Chỉ là một kinh nghiệm nhỏ những sẽ giúp ích cho bạn không nhỏ trong việc chọn lựa được mẫu vali du lịch cao cấp hợp, chất lượng. 
+                        <a href="#">
+                        Đọc tiếp
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <div class="news-item">
+                <div class="pic">
+                    <img alt="new 5" src="../img/news_img/new5.jpg" />
+                </div>
+                <div class="news-content">
+                    <h3>20 nguyên tắc vàng khi sắp xếp hành lý du lịch</h3>
+                    <p>
+                        Hành lý luôn là vấn đề nan giải với nhiều người. Không phải ai cũng thông tỏ cách để sắp xếp đồ dùng hợp lý nhất. 
+                        Dưới đây là 20 nguyên tắc bạn nên biết để trở thành “chuyên gia xếp đồ”.
+                        <a href="#">
+                        Đọc tiếp
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="service">
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <img src="../img/footer_img/icon-freeship-wh-2.png" alt="freeship">
+                </div>
+                <div class="col-3">
+                    <img src="../img/footer_img/icon-hoa-toc-wh-2-1.png" alt="fastship">
+                </div>
+                <div class="col-3">
+                    <img src="../img/footer_img/icon-bao-hanh-tan-nha-wh-2.png" alt="bao-hanh">
+                </div>
+                <div class="col-3">
+                    <img src="../img/footer_img/icon-doi-tra-wh-2.png" alt="doi-tra">
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>THÔNG TIN LIÊN LẠC</h5>
+                    <hr>
+                    <h5><i class="fas fa-phone"></i> 1900 123 456 (Chăm sóc khách hàng)</h5>
+                    <h5><i class="fas fa-phone"></i> 1900 456 789 (Đặt hàng)</h5>
+                    <h5><i class="fas fa-phone"></i> 0987 910 JQK (Bảo Hành)</h5>
+                    <h5>&#x2709;caubenhutnhat@gmail.com</h5>
+                    <h5>&#x2709;giamdocbungbu@gmail.com</h5>
+                </div>
+                <div class="col-md-4">
+                    <h5>CHĂM SÓC KHÁCH HÀNG</h5>
+                    <hr>
+                    <a href="../html/intro.html#ship"><h5>Chính Sách Vận Chuyển</h5></a>
+                    <a href="../html/intro.html#pay"><h5>Chính Sách Thanhh Toán</h5></a>
+                    <a href="../html/intro.html#secur"><h5>Chính Sách Bảo Mật</h5></a>
+                    <a href="../html/intro.html#war"><h5>Chính Sách Bảo Hành</h5></a>
+                </div>
+                <div class="col-md-4">
+                    <h5>VỀ CHÚNG TÔI</h5>
+                    <hr>
+                    <h5><a href="../html/intro.html">Giới thiệu</a></h5>
+                    <h5><a href="../html/news.html">Tin tức</a></h5>
+                    <h5><a href="#">Tuyển dụng</a></h5>
+                    <h5><a href="#">Gửi góp ý, khiếu nại</a></h5>
+                </div>
+            </div>
+            <div class="row address">
+                <div class="col-md-6 ">
+                    <h4> 
+                        <i class="fa fa-map-marker mr-2" aria-hidden="true"></i>
+                        CỬA HÀNG TUITO 1
+                    </h4>
+                    <ul>
+                        <li>&#x1F4CD;Địa chỉ: 87/9 Nguyễn Sỹ Sách, P.15, Tân Bình, TP.HCM</li>
+                        <li>&#x260E;Hotline: 0912 789 10J</li>
+                        <li>&#x2709;Email: tinhyeudieuki@gmail.com</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h4> 
+                        <i class="fa fa-map-marker mr-2" aria-hidden="true"></i>
+                        CỬA HÀNG TUITO 2
+                    </h4>
+                    <ul>
+                        <li>&#x1F4CD;Địa chỉ: 123 Nguyễn Văn Bảo, P.3, Gò Vấp, TP.HCM</li>
+                        <li>&#x260E;Hotline: 0989 10J QKA</li>
+                        <li>&#x2709;Email: tinhyeutenhat@gmail.com</li>
+                    </ul>
+                </div>         
+            </div>
+        </div>
+    </footer>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/order.js"></script>
+    <script src="../js/sign-in-up-out.js"></script>
+    <script src="../bootstrap/js/jquery-3.7.1.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
